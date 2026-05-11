@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!-- 
+==============================================================================
+File: package.xml
+Purpose: Defines the package properties, maintainer information, and 
+         dependencies required for the collaborative_arm_description package.
+==============================================================================
+-->
+<package format="3">
+  <name>collaborative_arm_description</name>
+  <version>0.0.0</version>
+  <description>URDF and Xacro description files for the collaborative robotic arm</description>
+  <maintainer email="luis_glez2626@outlook.com">luis-glez</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  
+  <!-- The ur_description package is required to load the base UR5e model -->
+  <exec_depend>ur_description</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!-- 
+==============================================================================
+File: package.xml
+Purpose: Defines the package properties for the bringup package. It declares 
+         execution dependencies on all other packages in the project so that 
+         the master launch file can find and start them.
+==============================================================================
+-->
+<package format="3">
+  <name>collaborative_arm_bringup</name>
+  <version>0.0.0</version>
+  <description>Master launch package to bring up the entire robotic system</description>
+  <maintainer email="luis_glez2626@outlook.com">luis-glez</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Execution dependencies: requires all other packages to be present -->
+  <exec_depend>collaborative_arm_description</exec_depend>
+  <exec_depend>collaborative_arm_gazebo</exec_depend>
+  <exec_depend>collaborative_arm_kinematics</exec_depend>
+  <exec_depend>collaborative_arm_vision</exec_depend>
+  <exec_depend>collaborative_arm_application</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

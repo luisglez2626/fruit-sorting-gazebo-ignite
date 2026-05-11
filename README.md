@@ -56,7 +56,9 @@ colcon build --symlink-install
 ```
 
 ### 2. Source the workspace
+```bash
 source install/setup.bash
+```
 
 ### 3. Launch the System
 Start the entire simulation, controllers, and UI using the `bringup` package:

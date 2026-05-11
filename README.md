@@ -53,3 +53,18 @@ Navigate to the root of your ROS 2 workspace (e.g., `~/ros2_ws`) and compile the
 
 ```bash
 colcon build --symlink-install
+```
+
+### 2. Source the workspace
+source install/setup.bash
+
+### 3. Launch the System
+Start the entire simulation, controllers, and UI using the `bringup` package:
+
+```bash
+ros2 launch collaborative_arm_bringup system.launch.py
+```
+
+---
+
+## 🎮 Features

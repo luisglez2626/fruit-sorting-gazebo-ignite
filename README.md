@@ -68,3 +68,8 @@ ros2 launch collaborative_arm_bringup system.launch.py
 ---
 
 ## 🎮 Features
+
+* **Compact UI:** Intuitive control panel for Cartesian (XYZ/RPY) and Joint-level jogging.
+* **Stereo Depth Vision:** Real-time object detection and 3D spatial mapping broadcasted via TF.
+* **Smart IK:** Dynamic trajectory duration calculation to prevent physics overshoot and local minima evasion.
+* **Automation:** 1-click full automated cycle to scan, pick, place, and sort both apples using the vision targets.
